@@ -1,3 +1,20 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "fc22",
+      "name": "E-commerce site",
+      "category": "deployed",
+      "description": "A full-stack online store with user authentication, product listings, cart, and checkout",
+      "status": "complete",
+      "stack": "React, Django"
+    },
+    {
+      "id": "57ff",
+      "name": "Portfolio Website",
+      "category": "not deployed",
+      "description": "A personal website to showcase my projects, blogs, and contact info",
+      "status": "not complete",
+      "stack": "Next.js, Tailwind CSS"
+    }
+  ]
 }

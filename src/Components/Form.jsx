@@ -90,7 +90,7 @@ export default function Form({ onSubmit }) {
             <label className="block mb-1">Stack</label>
             <input
               type="text"
-              name="manager"
+              name="stack"
               value={formData.stack}
               onChange={handleChange}
               placeholder="Enter stack"
