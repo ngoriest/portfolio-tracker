@@ -9,7 +9,7 @@ export default function Details({ refresh }) {
   const [currentProject, setCurrentProject] = useState(null);
 
   const fetchProjects = () => {
-    fetch("http://localhost:3000/projects")
+    fetch("https://portfolio-tracker-ll7p.onrender.com/projects")
       .then((r) => r.json())
       .then(data => {
         const cleanData = Array.isArray(data) ? data.flat().filter(p => p.id) : [];
@@ -29,7 +29,7 @@ export default function Details({ refresh }) {
     if (!window.confirm("Are you sure you want to delete this project?")) return;
 
     try {
-      const response = await fetch(`http://localhost:3000/projects/${id}`, {
+      const response = await fetch(`https://portfolio-tracker-ll7p.onrender.com/projects/${id}`, {
         method: "DELETE",
       });
 
@@ -58,7 +58,7 @@ export default function Details({ refresh }) {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3000/projects/${currentProject.id}`, {
+      const response = await fetch(`https://portfolio-tracker-ll7p.onrender.com/projects/${currentProject.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(currentProject),

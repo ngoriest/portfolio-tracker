@@ -12,7 +12,7 @@ function App() {
 
   const handleFormSubmit = async (formData) => {
     try {
-      const response = await fetch("http://localhost:3000/projects", {
+      const response = await fetch("https://portfolio-tracker-ll7p.onrender.com/projects", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
