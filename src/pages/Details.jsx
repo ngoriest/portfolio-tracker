@@ -133,7 +133,7 @@ export default function Details({ refresh }) {
           >
             <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Edit Project</h2>
 
-            {['name', 'category', 'description', 'status', 'manager'].map((field) => (
+            {['name', 'category', 'description', 'status', 'stack'].map((field) => (
               <div key={field} className="mb-4">
                 <label className="block mb-1 capitalize text-sm text-gray-700 dark:text-gray-300">{field}</label>
                 {field === 'description' ? (
